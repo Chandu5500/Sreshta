@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arrowFunctions</title>
+    </head>
+    <body>
+        <script>
+            class SampleClass{
+                constructor(){
+                    this.name="Chandu";
+                }
+                displayData(){
+                    console.log("The name of the user: "+this.name);
+                    
+                    setTimeout(function(){
+                        console.log("The name of the user: "+this.name);
+                    },5000);
+                    
+                    setTimeout(()=>{
+                        console.log("The name of the user: "+this.name);
+                    },6000);//callStack
+
+                    console.log("The name of the user: "+this.name);
+                }
+            }
+            var s1=new SampleClass();
+            s1.displayData();
+        </script>
+    </body>
+</html>

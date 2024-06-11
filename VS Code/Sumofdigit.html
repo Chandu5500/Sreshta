@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sum of Digit</title>
+    </head>
+    <body>
+        <div>Sum of Digit</div>
+        <script>
+            var n=prompt("Enter Number:");
+            var count=0;
+            while(n>0){
+                rem=n%10;
+                count+=rem;
+                n=n/10;
+                n=parseInt(n);
+            }
+            console.log(count)
+        </script>
+    </body>
+</html>

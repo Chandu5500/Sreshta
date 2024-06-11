@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function_modularisation</title>
+</head>
+<body>
+    <div>Function Modularisation</div>
+    <script type="text/javascript">
+        var sName, sGender, sAge, m1, m2, m3, sTotal, sAvg;
+        function inputDetails(){
+            sName= prompt("Enter Name: ");
+            sGender= prompt("Enter Gender: ");
+            sAge= prompt("Enter Age: ");
+            m1= prompt("Enter m1 marks: ");
+            m1=parseInt(m1);
+            m2= prompt("Enter m2 marks:");
+            m2=parseInt(m2);
+            m3= prompt("Enter m3 marks:");
+            m3=parseInt(m3);
+        }
+        
+        function total_avg(){
+            sTotal=m1+m2+m3;
+            sAvg=sTotal/3;
+        }
+        
+        function viewDetails(){
+            console.log("Name: "+sName);
+            console.log("Gender: "+sGender);
+            console.log("Age: "+sAge);
+            console.log("Total: "+sTotal);
+            console.log("Avg: "+sAvg);
+        }
+
+        inputDetails();
+        total_avg();
+        viewDetails();
+    </script>
+</body>
+</html>

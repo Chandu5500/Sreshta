@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignment_25</title>
+        <style>
+            ul,li{
+                border: 2px solid;
+                margin: 10px;
+                padding: 5px;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Country Name: 
+                <select id="setCountryName">
+                    <option>Select Country</option>
+                </select>
+            </li>
+            <li>State Name: 
+                <select disabled id="setStateName">
+                    <option>Select State</option>
+                </select>
+            </li>
+            <li>District Name: 
+                <select disabled id="setDistrictName">
+                    <option>Select District</option>
+                </select>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            var fillStateData=[
+                {
+                    name:"India",
+                    state:[],
+                    district:"Faraming Nation"
+                },
+                {
+                    name:"US",
+                    code:"usa1",
+                    des:"Rich State",
+                },
+                {
+                    name:"UK",
+                    code:"usa2",
+                    des:"Good State",
+                },
+                {
+                    name:"Japan",
+                    code:"jap",
+                    des:"New Inventers",
+                }
+            ]
+            console.log(fillStateData[0].name);
+            for(var state in fillStateData){
+                for (var i=0; i<fillStateData.length; i++){
+                    var optionTag=document.createElement("option");
+                    optionTag.innerHTML=fillStateData[i].name;
+                    document.querySelector("#setCountryName").append(optionTag);
+                }
+                break;
+            }
+
+            var set
+        </script>
+    </body>
+</html>

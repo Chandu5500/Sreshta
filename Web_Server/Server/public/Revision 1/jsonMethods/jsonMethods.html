@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jsonMethods</title>
+    </head>
+    <body>
+        <script>
+            var data={
+                name: "Chandu",
+                age: 20,
+                gender: "Male",
+            }
+            data.location="Hyd"
+            delete data.age
+
+            changedData=JSON.stringify(data)
+            console.log(data)
+            console.log(changedData)
+            console.log(JSON.parse(changedData))
+        </script>
+    </body>
+</html>

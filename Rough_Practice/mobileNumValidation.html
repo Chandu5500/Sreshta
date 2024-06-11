@@ -1,0 +1,9 @@
+<script>
+    var number= prompt("Enter Number","Use Uk format");
+    var refEx= /\+\(44\)\([0-9]{2}\)\s[0-9]{4}\s[0-9]{4}/;
+    if(number.match(refEx)){
+        document.write("OTP was sent succesfully")
+    }else{
+        document.write("Invaild Number - UK Format +(44)(20) 7123 4567")
+    }
+</script>

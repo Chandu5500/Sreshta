@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Details JS Function</title>
+    </head>
+    <body>
+        <div>Student Details JS Function</div>
+        <script>
+            function readvalues(){
+                var name, age, gender, dept, m1, m2, m3;
+                name=prompt("Enter name: ");
+                age=prompt("Enter age: ");
+                gender=prompt("Enter gender: ");
+                dept=prompt("Enter Dept: ");
+                m1=prompt("Enter m1 Value: ");
+                m1=parseInt(m1);
+                m2=prompt("Enter m2 Value: ");
+                m2=parseInt(m2);
+                m3=prompt("Enter m3 Value: ");
+                m3=parseInt(m3);
+            }
+            
+            function total_avg(){
+                total= m1 + m2 + m3;
+                avg=total/3;
+            }
+            
+            function display(){
+                console.log("Name: "+ name);
+                console.log("Age: "+age);
+                console.log("Gender: "+gender);
+                console.log("Dept: "+dept);
+                console.log("m1 value: "+m1);
+                console.log("m2: "+m2);
+                console.log("m3: "+m2);
+                console.log("Total: "+total);
+                console.log("Avg: "+avg);
+            }
+            
+            function grade(){
+                if (avg>=40){
+                    console.log(name+" passed")
+                    if (avg>=90){
+                        console.log(name+" got distinction")
+                    }
+                }
+                else{
+                    console.log(name+" Failed")
+                }
+            }
+
+            readvalues();
+            total_avg();
+            display();
+            grade();
+
+            
+        </script>
+    </body>
+</html>

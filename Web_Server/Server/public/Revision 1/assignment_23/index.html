@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignment_23</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3>User Registration Form</h3>
+        <div class="mainContainer">
+            <ul>
+                <li>Name: <input type="text" id="sname"></li>
+                <li>Age: <input type="text" id="sage"></li>
+                <li>Gender: 
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </li>
+                <li>Country: 
+                    <select id="scountry">
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Coria</option>
+                    </select>
+                </li>
+                <li class="center"><input type="button" value="Register Details" onclick="registerDetails()"></li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

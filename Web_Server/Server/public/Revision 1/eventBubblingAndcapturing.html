@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eventBubblingAndCapturing</title>
+        <style>
+            .pContainer{
+                border: 2px solid;
+                height: 300px;
+                text-align: center;
+                padding: 10px;
+                background-color: yellow;
+            }
+            .cContainer{
+                border: 2px solid;
+                height: 150px;
+                text-align: center;
+                background-color: lightblue;
+                margin: 70px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="pContainer">Parent Class
+            <div class="cContainer">Child Class</div>
+        </div>
+        <script type="text/javascript">
+            document.querySelector(".pContainer").addEventListener("click",()=>{
+                console.log("pContainer Invoked")
+            },true)
+            document.querySelector(".cContainer").addEventListener("click",()=>{
+                console.log("cContainer Invoked")
+            },true)
+        </script>
+    </body>
+</html>

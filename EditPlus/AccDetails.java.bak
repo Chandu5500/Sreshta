@@ -1,0 +1,7 @@
+class AccDetails{
+	int AccNum;
+	String IFSC;
+	String Branch;
+	double Amount;
+	String UPI;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Array Demo</title>
+    </head>
+    <body>
+        <div>Array Demo</div>
+        <script>
+            var a=10;
+            var length=prompt("Enter array length:")
+            var marks=[];
+            for (i=0;i<length;i++){
+                marks[i]=prompt("Enter the sub"+(i+1))
+                marks[i]=parseInt(marks[i])
+
+            }
+            console.log(a);
+            console.log(marks);
+            console.log(marks[2]);
+            //In javascript array can allow any type of Data like Int,String,Boolean, etc..,
+            var array=[20,"String",true,5.4];
+            console.log(array);
+            //var total=marks[0]+marks[1]+ marks[2]+marks[3];
+            //console.log(total);
+            var total=0;
+            for (var i=0;i<marks.length;i++){ //marks.length=Array.length
+                total+=marks[i];
+            }
+            console.log(total);
+        </script>
+    </body>
+</html>

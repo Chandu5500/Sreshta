@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jqueryTraversingMethod</title>
+        <style type="text/css">
+            .block{
+                border: 2px solid;
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+        <script src="jquery_compressed.js"></script>
+    </head>
+    <body>
+        <input type="button" value="Click Here" onclick="applyChanges()">
+        <div>
+            <span>Block</span>
+        </div>
+        <script>
+            var applyChanges=()=>{
+                $("span").parents().addClass("block");
+            }
+            
+        </script>
+    </body>
+</html>

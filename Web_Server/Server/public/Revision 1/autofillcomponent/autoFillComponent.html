@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>autoFillComponent</title>
+        <script src="../jquery_compressed.js"></script>
+        <style>
+            #bookName{
+                width: 250px;
+                height: 20px;
+                
+            }
+            .filteredItem{
+                width: 255px;
+                height: 20px;
+                border: 2px solid;
+            }
+            .filteredItem:hover{
+                background-color: aqua;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" placeholder="Enter the book name" id="bookName" onkeyup="getFilteredListOfOptions(event)">
+            <div class="filteredListContainer">
+                
+            </div>
+        </div>
+        <script>
+            var filteredList=[]
+            var booksList=[
+                "ABC Book",
+                "My Dreams and Thoughts",
+                "Deep Dive into Tech",
+                "My Travelling Days",
+                "Know My Hero",
+                "Techi LIFE",
+                "The Horse and Sea",
+                "Road side Stories",
+                "Inside of my Life",
+                "Introducing My Own Friends",
+                "Javascript and Its Powerfulness",
+                "Know Ur Colegue",
+                "Mr President",
+                "The INDIA Country"
+            ]
+
+            var fillSelectedData=(event)=>{
+                var selectedOption=$(event.target).attr("value")
+                $("#bookName").val(selectedOption)
+            }
+            var fillSuggestedOption=()=>{
+                $(".filteredListContainer").empty();
+                for(var i=0;i<filteredList.length;i++){
+                    var divTag=$("<div onclick='fillSelectedData()'/>");
+                    divTag.attr('value',filteredList[i]).addClass('filteredItem').text(filteredList[i]);
+                    $(".filteredListContainer").append(divTag)
+                }
+            }
+            
+            getFilteredListOfOptions=(event)=>{
+                var userOption=$(event.target).val()
+                filteredList=[];
+                for(var i=0;i<booksList.length;i++){
+                    if(booksList[i].includes(userOption)){
+                        filteredList.push(booksList[i]);
+                    }
+                }
+                fillSuggestedOption();
+            }
+        </script>
+    </body>
+</html>

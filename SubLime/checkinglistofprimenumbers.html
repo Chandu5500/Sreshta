@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Checking list of prime numbers</title>
+	</head>
+	<body>
+		<div>Checking list of prime numbers</div>
+		<script type="text/javascript">
+			var data=[1,2,3,4,5,6,7,8,9];
+			var n;
+			
+			
+			
+			for (var i=0; i<data.length; i++){
+				n=data[i];
+				var rem=0;
+				var count=0;
+				for (var j=2; j<n; j++){
+					rem=n%j;
+					if (rem==0){
+						count++;
+						break;
+					}
+				}
+				if (count==0){
+				console.log("It is Prime "+n);
+				}
+				else{
+					console.log("It is not Prime "+n);
+				}
+			}
+			
+		</script>
+	</body>
+</html>

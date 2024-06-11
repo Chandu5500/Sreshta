@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>slideSideBar</title>
+        <script src="../jquery_compressed.js"></script>
+        <style>
+            .container{
+                height: 500px;
+                width: 300px;
+                position: absolute;
+                top: 50px;
+                bottom: 20px;
+                background-color: #ccc;
+                border: 2px solid;
+                transition: 1s;
+            }
+            li{
+                list-style: none;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Change" onclick="change()">
+        <div class="container">
+            <ul>
+                <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            </ul>
+            
+        </div>
+        <script>
+            var isOpen= true;
+            var change=()=>{
+                if(isOpen){
+                    $(".container").css("left","-300px");
+                    isOpen= false;
+                }else{
+                    $(".container").css("left","5px");
+                    isOpen= true;
+                }
+                
+            }
+        </script>
+    </body>
+</html>

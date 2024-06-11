@@ -1,0 +1,9 @@
+<script>
+    var categories=["Electronis", "Fashion", "Footwear"];
+    categories.pop("Mobiles");
+    categories.shift("Tabs");
+    categories.splice(1,0,"Batteries","Mats")
+    categories.map(function(categorie){
+        document.write(`<a href="#">${categorie}</a><br>`);
+    })
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>importingAndExportingJSFiles</title>
+        <style>
+            ul{
+                width: 500px;
+                margin: 10px auto;
+                padding: 10px;
+                border: 1px solid;
+            }
+            li{
+                border: 2px solid;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+        </style>
+        <script src="lib/mathLib.js"></script>
+        <script src="thirdPartyLib.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li><input type="number" id="fval" placeholder="First Value"></li>
+            <li><input type="number" id="sval" placeholder="Second Value"></li>
+            <li><input type="button" value="Add" id="addValBtn"></li>
+            <li>The Sum is <span id="result"></span></li>
+        </ul>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>

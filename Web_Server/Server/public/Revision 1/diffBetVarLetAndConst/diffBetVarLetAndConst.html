@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>diffBetVarLetAndConst</title>
+    </head>
+    <body>
+        <script>
+            var a=10;
+            console.log("Value of a: "+a);
+
+            function displayData(){
+                var b=20;
+                console.log("Value of b: "+b);
+            }
+            displayData();
+            //console.log("Value of b: "+b);
+
+            if(true){
+                var c=30;
+                console.log("Value of c: "+c);
+                let d=40;
+                console.log("Value of d: "+d);
+            }
+            console.log("Value of c: "+c);
+            //console.log("Value of d: "+d);
+
+            const max_count=99;
+            //max_count+=10;
+            console.log("Value of max_count: "+max_count);
+        </script>
+    </body>
+</html>

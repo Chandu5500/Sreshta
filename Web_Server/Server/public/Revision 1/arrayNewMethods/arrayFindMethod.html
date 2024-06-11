@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arrayFindMethod</title>
+    </head>
+    <body>
+        <script>
+            var count=0;
+            data=[20,50,60,80,10,30];
+            /*for (var i=0; i<data.length; i++){
+                if (data[i]==800){
+                    count+=1
+                    break;
+                }
+            };
+            if(count==1){
+                console.log("Found");
+            }else{
+                console.log("Not Found")
+            }*/
+
+            var result=data.find((a)=>{
+                if(a==200){
+                    return true;
+                }
+            });
+            if (result){
+                console.log("Found");
+            }else{
+                console.log("Not Found");
+            }
+        </script>
+    </body>
+</html>

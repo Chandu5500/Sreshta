@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transformationsSkew</title>
+        <style>
+            .container{
+                border: 2px solid;
+                padding: 30px;
+                width: 300px;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                text-align: center;
+                background-color: yellow;
+                border-radius: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">Hello!</div>
+        <script>
+            var angle=0;
+            setInterval(()=>{
+                angle+=5;
+                angWithDeg=angle+"deg";
+                document.querySelector(".container").style.transform='skew('+angWithDeg+','+angWithDeg+')'
+            },100)
+        </script>
+    </body>
+</html>

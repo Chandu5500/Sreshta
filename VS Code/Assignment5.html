@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 5</title>
+    </head>
+    <body>
+        <div>Assignnment 5</div>
+        <script>
+            var name=prompt("Enter Name: ");
+            var age=prompt("Enter Age: ");
+            var gender=prompt("Enter Gender: ");
+            var dept=prompt("Enter Department: ");
+            var basicsalary=prompt("Enter Basic Salary: ")
+            basicsalary=parseInt(basicsalary)
+            var hre=(basicsalary*14)/100;
+            var pf=(basicsalary*24)/100;
+            var TotalSalary=basicsalary+pf+hre;
+            TotalSalary=parseInt(TotalSalary)
+            var NTax= "No Tax";
+            console.log("Name: "+name);
+            console.log("Age: "+age);
+            console.log("Gender: "+gender);
+            console.log("Department: "+dept);
+            console.log("Basic Salary: "+basicsalary);
+            console.log("HRE: "+hre);
+            console.log("PF: "+pf);
+            console.log("Total Salary: "+TotalSalary);
+            if (gender=="Male"){
+                if (TotalSalary>=50000){
+                    var tax=(TotalSalary*15)/100;
+                    console.log("Tax :"+tax);
+                }
+                if(TotalSalary>=30000){
+                    var tax=(TotalSalary*10)/100;
+                    console.log("Tax :"+tax);
+                }
+                if(TotalSalary>=20000){
+                    var tax=(TotalSalary*5)/100;
+                    console.log("Tax :"+tax);
+                }
+                else{
+                    console.log("Tax :"+NTax);
+                }
+            }
+            else if(gender="Female"){
+                if (TotalSalary>=50000){
+                    var tax=(TotalSalary*10)/100;
+                    console.log("Tax :"+tax);
+                }
+                if(TotalSalary>=30000){
+                    var tax=(TotalSalary*5)/100;
+                    console.log("Tax :"+tax);
+                }
+                if(TotalSalary>=20000){
+                    var tax=(TotalSalary*3)/100;
+                    console.log("Tax :"+tax);
+                }
+                else{
+                    console.log("Tax :"+NTax);
+                }
+            }
+            else{
+                console.log("others details")
+            }
+        </script>
+    </body>
+</html>

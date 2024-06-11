@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>closuresDemo</title>
+    </head>
+    <body>
+        <script>
+            var a=10;
+            (function(){
+                console.log("function called")
+                console.log(a);
+                var b=20;
+                console.log(b)
+
+                function sample(){
+                    console.log("called from sample")
+                }
+                sample();
+
+                var data={name: "raj",age: 20};
+                console.log(data);
+
+                class assam{
+                    
+                }
+                var t1=new assam();
+            })();
+            //console.log(b);
+
+            //sample();
+
+            //console.log(data);
+
+            var t1=new assam();
+        </script>
+    </body>
+</html>

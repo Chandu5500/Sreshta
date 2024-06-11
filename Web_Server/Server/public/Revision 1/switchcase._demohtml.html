@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch_case</title>
+</head>
+<body>
+    <div>switch_case</div>
+    <script type="text/javascript">
+        var a,b,result;
+        a=prompt("Enter a value:");
+        a=parseInt(a);
+        b=prompt("Enter b value:");
+        b=parseInt(b); 
+        option=prompt("Choose an option 1.Add, 2.Sub, 3.Mul, 4.Div");
+
+        /*if(option=="Add"){
+            result=a+b;
+            console.log("Addition of two numbers is "+result);
+        }
+        
+        else if(option=="Sub"){
+            result=a-b;
+            console.log("Subtraction of two numbers is "+result);
+        }
+        
+        else if(option=="Mul"){
+            result=a*b;
+            console.log("Multiplication of two numbers is "+result);
+        }
+        
+        else if(option=="Div"){
+            result=a/b;
+            console.log("Division of two numbers is "+result);
+        }*/
+        
+        switch(option){
+            case 'Add':
+                result=a+b;
+                console.log("Addition of two numbers is "+result);
+                break;
+            case 'Sub':
+                result=a-b;
+                console.log("Subtraction of two numbers is "+result);
+                break;
+            case 'Mul':
+                result=a*b;
+                console.log("Multiplication of two numbers is "+result);
+                break;
+            case 'Div':
+                result=a/b;
+                console.log("Division of two numbers is "+result);
+                break;
+            default:
+                console.log("You have choosen wrong option.")
+        }
+    </script>
+</body>
+</html>

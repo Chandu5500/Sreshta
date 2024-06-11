@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>drag_drop_assignment</title>
+        <style>
+            .container{
+                border: 2px solid;
+                height: 500px;
+                width: 477px;
+                margin: 10px;
+            }
+            #c1, #c2, #c3{
+                float: left;
+            }
+            img{
+                height: 200px;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="container" id="c1" ondragover="dragover(event)" ondrop="drop(event)">Men</div>
+            <div class="container" id="c2" ondragover="dragover(event)" ondrop="drop(event)">Kids</div>
+            <div class="container" id="c3" ondragover="dragover(event)" ondrop="drop(event)">Women</div>
+        </div>
+        <div>Men:</div>
+        <span><img id="m1" ondragstart="dragstart(event)" src="images\men_1.jpg" alt="img"></span>
+        <span><img id="m2" ondragstart="dragstart(event)" src="images\men_2.jpg" alt="img"></span>
+        <span><img id="m3" ondragstart="dragstart(event)" src="images\men_3.jpg" alt="img"></span>
+        <span><img id="m4" ondragstart="dragstart(event)" src="images\men_4.jpg" alt="img"></span>
+        <span><img id="m5" ondragstart="dragstart(event)" src="images\men_5.jpg" alt="img"></span>
+        
+        <div>Kids:</div>
+        <span><img id="k1" ondragstart="dragstart(event)" src="images\kid_1.jpeg"></span>
+        <span><img id="k2" ondragstart="dragstart(event)" src="images\kid_2.jpeg"></span>
+        <span><img id="k3" ondragstart="dragstart(event)" src="images\kid_3.jpeg"></span>
+        <span><img id="k4" ondragstart="dragstart(event)" src="images\kid_4.jpeg"></span>
+        <span><img id="k5" ondragstart="dragstart(event)" src="images\kid_5.jpeg"></span>
+
+        <div>Women:</div>
+        <span><img id="w1" ondragstart="dragstart(event)" src="images\women_1.jpeg"></span>
+        <span><img id="w2" ondragstart="dragstart(event)" src="images\women_2.jpeg"></span>
+        <span><img id="w3" ondragstart="dragstart(event)" src="images\women_3.jpeg"></span>
+        <span><img id="w4" ondragstart="dragstart(event)" src="images\women_4.jpeg"></span>
+        <span><img id="w5" ondragstart="dragstart(event)" src="images\women_5.jpeg"></span>
+
+        <script>
+            var elementID
+            var dragstart=(event)=>{
+                elementID="#"+event.target.getAttribute("id")
+                console.log("Drag Started")
+            }
+            var dragover=(event)=>{
+                event.preventDefault()
+                console.log("Drag Overing")
+            }
+            var drop=(event)=>{
+                event.preventDefault()
+                console.log("Drop happened")
+                event.target.append(document.querySelector(elementID))
+            }
+        </script>
+    </body>
+</html>

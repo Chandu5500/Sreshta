@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>CSSPositionRelative</title>
+		<style type="text/css">
+			.heading{
+				background: black;
+				color: white;
+				border: 1px solid;
+				height: 30px;
+				width: 150px;
+				margin: 10px auto;
+			}
+			.border{
+				border: 2px solid;
+				height: 150px;
+				position: relative;
+			}
+			.container{
+				border: 2px solid;
+				height: 120px;
+				width: 120px;
+			}
+			.block1{
+				background: pink;
+			}
+			.block2{
+				background: lightgreen;
+			}
+			.block3{
+				background: lightgrey;
+				left: 150px;
+				top: 60px;
+				position: absolute;
+			}
+			.block4{
+				background: lightblue;
+			}
+			.block5{
+				background: lightgoldenrodyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 class="heading">CSS Position</h3>
+		<div class="container block1">Block 1</div>
+		<div class="container block2">Block 2</div>
+		<div class="border">
+			<div class="container block3">Block 3</div>
+		</div>
+		<div class="container block4">Block 4</div>
+		<div class="container block5">Block 5</div>
+	</body>
+</html>

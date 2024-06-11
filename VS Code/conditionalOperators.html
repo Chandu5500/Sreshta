@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conditional Operators</title>
+    </head>
+    <body>
+        <div>Conditional Operator</div>
+        <script>
+            var UserName=prompt("Enter user name: ");
+            var UserGender=prompt("Enter user gender: ");
+            var ageLimit;
+            if (UserGender=="Male"){
+                ageLimit=21;
+            }
+            else{
+                ageLimit=18;
+            }
+            /*ageLimit=(UserGender=="Male")? 21:18*/
+            console.log("Work Permit for the User is: "+ ageLimit);
+        </script>
+    </body>
+</html>

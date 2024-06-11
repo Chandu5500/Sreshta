@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PrimeNumberorNot</title>
+	</head>
+	<body>
+		<div>Prime or not</div>
+		<script type="text/javascript">
+			var n=5;
+			var rem=0;
+			var count=0;
+			for (var i=2; i<n; i++){
+				rem=n%i;
+				if (rem==0){
+					count++;
+				}
+			}
+			if (count==0){
+				console.log("It is Prime "+n)
+			}
+			else{
+				console.log("It is not Prime "+n)
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>opacity_property</title>
+		<style type="text/css">
+			div{
+				border: 2px solid;
+				height: 130px;
+				width: 130px;
+				text-align: center;
+			}
+			.b1{
+				background: pink;
+			}
+			.b2{
+				background: yellow;
+				position:relative;
+				top: 10px;
+				left: 130px;
+				z-index: 10;
+				opacity: 0.3;
+			}
+			.b3{
+				background: grey;
+				position: relative;
+				top: -40px;
+				left: 226px;
+			}
+			.b4{
+				background: cyan;
+				position: relative;
+				left: 100px;
+				top: 50px;
+			}
+			.b5{
+				background: lightblue;
+				z-index: 12;
+			}
+			.b6{
+				background: lightgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="b1">Block 1</div>
+		<div class="b2">Block 2</div>
+		<div class="b3">Block 3</div>
+		<div class="b4">Block 4</div>
+		<div class="b5">Block 5</div>
+		<div class="b6">Block 6</div>
+		<h3>Note: Opacity value must be in between (0-1)</h3>
+	</body>
+</html>

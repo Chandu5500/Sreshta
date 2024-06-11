@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonObjectwithBehaviourAndProperties</title>
+</head>
+<body>
+    <div>jsonObjectwithBehaviourAndProperties</div>
+    <script type="text/javascript">
+        var sData={
+            name:"Don",
+            gender:"male",
+            age:20,
+            marks:[40,40,40,40,40],
+            total_avg: function(){
+                sData.total=0;
+                for(var i=0; i<sData.marks.length;i++){
+                    sData.total+=sData.marks[i];
+                }
+                sData.avg=sData.total/sData.marks.length; 
+            },
+            grade: function(){
+                if (sData.avg>=40){
+                    console.log("Pass");
+                }else{
+                    console.log("Surprise");
+                }
+            
+            },
+            displayDetails: function(){
+                sData.total_avg()
+                console.log("Name: "+sData.name);
+                console.log("Age: "+sData.age);
+                console.log("Gender: "+sData.gender);
+                console.log("marks: "+sData.marks);
+                console.log("Total: "+sData.total);
+                console.log("Avg: "+sData.avg);
+                sData.grade();
+            }
+        }
+        sData.displayDetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>domOperationsThroughJquery</title>
+        <style>
+            .container{
+                border: 2px solid;
+                width: 500px;
+                margin: 10px auto;
+                padding: 30px;
+            }
+            .highlight{
+                background-color: skyblue;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <input type="button" value="Highlight" onclick="displayData()">
+        <div class="container" id="dBlock">Hello Everyone...</div>
+        <script type="text/javascript">
+            var displayData=()=>{
+
+                /*
+                var existingClass=document.querySelector("#dBlock").getAttribute("class");
+                existingClass=existingClass+" highlight"
+                document.querySelector("#dBlock").setAttribute("class",existingClass)
+                */
+
+                $("#dBlock").addClass("highlight");
+            }
+        </script>
+    </body>
+</html>

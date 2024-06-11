@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>progressCardDetailsUsingDHTML</title>
+        <style>
+            .heading{
+                border: 2px solid;
+                text-align: center;
+                padding: 10px;
+            }
+            ul{
+                border: 2px solid;
+                width: 400px;
+                margin: 10px auto;
+                padding: 5px;
+                background: #ccc;
+            }
+            li{
+                border: 2px solid;
+                list-style: none;
+                margin: 5px;
+                padding: 5px;
+                background: white;
+            }
+            #m1,#m2,#m3,#m4{
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">Student Progress Card Generator</div>
+        <ul>
+            <li>Student Name: <input type="text" id="sName"></li>
+            <li>Student Age: <input type="text" id="sAge"></li>
+            <li>Gender: 
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+            <li>Class:
+                <select id="sClass">
+                    <option>Class 1</option>
+                    <option>Class 2</option>
+                    <option>Class 3</option>
+                    <option>Class 4</option>
+                    <option>Class 5</option>
+                </select>
+            </li>
+            <li class="marksBlock">Marks:
+                <input type="text" id="m1" maxlength="2">
+                <input type="text" id="m2" maxlength="2">
+                <input type="text" id="m3" maxlength="2">
+                <input type="text" id="m4" maxlength="2">
+
+            </li>
+            <li><input type="button" value="Generate Progress Card" onclick=""></li>
+        </ul>
+        <div> </div>
+        <ul>
+            <li>Student Name: </li>
+            <li>Age: </li>
+            <li>Gender:  </li>
+            <li>Class: </li>
+            <li>Marks: </li>
+            <li>Total: </li>
+            <li>Avg: </li>
+            <li>Grade: </li>
+        </ul>
+    </body>
+</html>

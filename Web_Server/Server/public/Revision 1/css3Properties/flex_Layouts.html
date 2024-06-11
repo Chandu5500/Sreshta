@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flexLayouts</title>
+        <style>
+            .container{
+                height: 600px;
+                background-color: aquamarine;
+                display: flex;
+                /*flex-direction: column;/*column, row, column-reverse, row-reverse*/
+                /*flex-wrap: wrap-reverse;/*nowrap, wrap, wrap-reverse*/
+
+                /*flex-flow: column wrap;/*Combination of direction and wrap*/
+
+                /*justify-content: space-between;/*center, flex-start, flex-end, space-around, space-between*/
+
+                /*align-items: center;/*center, flex-start, flex-end, stretch, space-around, space-between*/
+                
+                //*justify-content: center;
+                align-items: center;*/
+            }
+            .container div{
+                border: 2px solid;
+                height: 100px;
+                width: 100px;
+                text-align: center;
+                padding: 20px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!--<div style="order: 2; flex-grow: 1;">Item 1</div>
+            <div style="order: 4; flex-grow: 2;">Item 2</div>
+            <div style="order: 1; flex-grow: 1;">Item 3</div>
+            <div style="order: 3; flex-grow: 1;">Item 4</div> -->
+
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div style="flex-shrink: 2; flex-basis: 200px; align-self: center;">Item 3</div><!--flex: combination of grow, shrink and-->
+            <div>Item 4</div>
+            <div>Item 5</div>
+        </div>
+    </body>
+</html>

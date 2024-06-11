@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scope of the variable</title>
+	</head>
+	<body>
+		<div>Scope of the variable</div>
+		<script type="text/javascript">
+			var a=100; //Global Scope //public varible
+			function displayInfo(){
+				var b=200;//local Scope //private variable
+				console.log("The value of b: "+b);
+			}
+			console.log("The value of a: "+a);
+			displayInfo();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of the number</title>
+</head>
+<body>
+    <div>sum of the number</div>
+    <script type="text/javascript">
+        var n=prompt("Enter the number");
+        var result=0;
+        var rem=0;
+        n=parseInt(n);
+        while(n>0){
+            rem=n%10;
+            result+=rem;
+            n=n/10;
+            n=parseInt(n)
+        }
+        console.log(result);
+    </script>
+</body>
+</html>

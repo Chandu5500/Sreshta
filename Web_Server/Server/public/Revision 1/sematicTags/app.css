@@ -1,0 +1,56 @@
+.hTag,
+.mTag,
+.fTag{
+    border:2px solid;
+    padding: 5px;
+    margin: 5px;
+    left: 10px;
+    right: 10px;
+}
+
+.hTag{
+    top: 10px;
+    text-align: center;
+    background-color: white;
+}
+.mTag{
+    height: 598px;
+    background-color: white;
+}
+.fTag{
+    bottom: 10px;
+    text-align: center;
+    background-color: white;
+}
+.lBlock, .rBlock{
+    border: 2px solid;
+    float: left;
+    margin: 10px;
+}
+.lBlock{
+    width: 35%;
+    height: 580px;
+}
+.rBlock{
+    width: 60%;
+    height: 580px;
+    overflow: auto;
+}
+.items .index{
+    list-style: none;
+    border: 2px solid;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+}
+.items,.content{
+    padding: 0px;
+    
+}
+.content .detailsBlock{
+    list-style: none;
+    border: 2px solid;
+    margin: 10px;
+    height: 150px;
+    background-color: white;
+}

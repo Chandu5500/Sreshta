@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Finding prime number or not</title>
+    </head>
+    <body>
+        <div>Finding Prime number or not</div>
+        <script>
+            var n=prompt("enter number");
+            n=parseInt(n);
+            var rem;
+            rem=parseInt(rem);
+            var count=0;
+            count=parseInt(count);
+            for (var i=2;i<n;i++){
+                rem=n%i;
+                if (rem==0){
+                    count++;
+                }
+            }
+            if (count==0){
+                console.log("It is a Prime Number");
+            }
+            else{
+                console.log("It is not Prime Number");
+            }
+        </script>
+    </body>
+</html>

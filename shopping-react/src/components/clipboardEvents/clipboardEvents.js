@@ -1,0 +1,82 @@
+import { useState } from "react"
+
+export function ClipboardEvents(){
+    const [userName, setUserName] = useState('');
+    const [userError, setUserError] = useState('');
+    const [cityName, setCityName] = useState('');
+    const [cityError, setCityError] = useState('');
+    const [msg, setMsg] = useState('');
+    
+    function handleUserName(e){
+        setUserName(e.target.value)
+    }
+    function SubmitClick(){
+        if(userName==""){
+            setUserError("User name required");
+        }else{
+            document.write("Hello! "+userName+ " Your city is "+ cityName );
+        }
+        if(cityName=="notcity"){
+            setCityError("Please select your city")
+        }
+    }
+    function handleUserBlur(){
+        if(userName==""){
+            setUserError("User name required");
+        }else{
+            setUserError("")
+        }
+    }
+    function handleUserKeyUp(){
+        if(userName==""){
+            setUserError("User name required");
+        }else{
+            setUserError("")
+        }
+    }
+    function CityChanged(e){
+        if(e.target.value=='notcity'){
+            setCityError("Please enter your city");
+        }else{
+            setCityName(e.target.value);
+            setCityError('');
+        }
+    }
+    function UserFocus(){
+        setUserError("Name is Mandatory")
+    }
+    function handleCut(){
+        setMsg('Removed Placed on Clipboard')
+    }
+    function handleCopy(){
+        setMsg('Copied to Clipboard')
+    }
+    function handlePaste(){
+        setMsg('Inserted from clipboard')
+    }
+
+    return(
+        <div className="container-fluid">
+            <h2>Register User</h2>
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text" onFocus={UserFocus} onKeyUp={handleUserKeyUp} onBlur={handleUserBlur} onChange={handleUserName}/></dd>
+                <dd className="text-danger">{userError}</dd>
+                <dt>Your City</dt>
+                <dd>
+                    <select onChange={CityChanged}>
+                        <option value='notcity'>Select City</option>
+                        <option value='Chirala'>Chirala</option>
+                        <option value='Vizag'>Vizag</option>
+                        <option value='Bapatla'>Bapatla</option>
+                    </select>
+                </dd>
+                <dd className="text-danger">{cityError}</dd>
+                <dt>Mobile</dt>
+                <dd><input type="text" onCut={handleCut} onCopy={handleCopy} onPaste={handlePaste}/></dd>
+                <dd className="text-danger">{msg}</dd>
+            </dl>
+            <button onClick={SubmitClick}>Submit</button>
+        </div>
+    )
+}

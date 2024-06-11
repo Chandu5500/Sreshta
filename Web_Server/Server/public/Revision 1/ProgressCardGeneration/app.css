@@ -1,0 +1,27 @@
+h3{
+    border: 2px solid;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.displayDetails,
+.readDetails{
+    border: 2px solid;
+    width: 500px;
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.displayDetails li,
+.readDetails li{
+    border: 2px solid;
+    background-color: #fff;
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+#smarks input{
+    width: 50px;
+}

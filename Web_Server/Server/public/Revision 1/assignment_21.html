@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment_21</title>
+</head>
+<body>
+    <div>assignment_21</div>
+    <script type="text/javascript">
+        var bookdetails={
+            readDetails:function(){
+                this.bname=prompt("Enter book name: ");
+                this.bprice=prompt("Enter Price: ");
+                this.bprice=parseInt(this.bprice);
+                this.publisher=prompt("Enter Publisher: ");
+                this.discountPercent= (this.bprice*10)/100;
+                this.author=prompt("Enter Author:");
+                this.displayBookDetails();
+            },
+            displayBookDetails: function(){
+                console.log("Name: "+this.bname);
+                console.log("Price: "+this.bprice);
+                console.log("Publisher: "+this.publisher);
+                console.log("Discount Percent: "+this.discountPercent);
+                console.log("Author: "+this.author);
+            }
+        }
+        bookdetails.readDetails();
+    </script>
+</body>
+</html>

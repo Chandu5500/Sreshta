@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dynamicEventHandling2</title>
+    </head>
+    <body>
+        <div class="button"></div>
+        <script type="text/javascript">
+            var btn=document.createElement("input");
+            btn.setAttribute("type","button");
+            btn.setAttribute("value","Click Here");
+
+            btn.addEventListener("click",()=>{
+                alert("Event Happened!")
+            })
+            document.querySelector(".button").append(btn);
+        </script>
+    </body>
+</html>

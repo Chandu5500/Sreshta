@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>accessingClosureDataOutside</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var data=(function(){
+                var count=10;
+                console.log(count);
+                var displayDetails=()=>{
+                    console.log("from displaydetails")
+                }
+
+                /*sample(){
+                    console.log("from sample function")
+                }*/
+                return{
+                    count:count,
+                    displayData(){
+                        displayDetails();
+                    },
+                    sample(){
+                    console.log("from sample function")
+                }
+                }
+            })()
+
+            console.log(data.count);
+            data.displayData();
+            data.sample();
+        </script>
+    </body>
+</html>

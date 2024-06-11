@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classesDemo</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class sampleClass{
+                constructor(){
+                    console.log("Construct Data");
+                }
+                displayInfo(){
+                    console.log("Display Details");
+                }
+                showInfo(){
+                    console.log("Show Details");
+                }
+            }
+            var p1=new sampleClass();
+            //p1.displayInfo();
+            //p1.showInfo();
+            //console.log(p1);
+
+            class BookInfo{
+                constructor(name,price,author){
+                    this.publisher="The Indian Publisher";
+                    this.bookName=name;
+                    this.bookPrice=price;
+                    this.bookAuthor=author;
+                }
+            }
+            var b1=new BookInfo("The EveryThing",2000,"Kedar");
+            console.log(b1);
+
+            var b2=new BookInfo("The Assam",1000,"Kaja");
+            console.log(b2);
+        </script>
+    </body>
+</html>

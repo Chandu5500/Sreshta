@@ -1,0 +1,9 @@
+class Test98{
+	int a=20;
+	int b=40;
+	public static void main(String[] args){
+		System.out.println("Main Start");
+		System.out.println(a);
+		System.out.println(b);
+	}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional_control_structures_if</title>
+</head>
+<body>
+    <div>Student Details Avg</div>
+    <script type="text/javascript">
+        var sName, sGender, sAge, m1, m2, m3, sTotal, sAvg;
+        sName= prompt("Enter student name: ");
+        sGender= prompt("Enter Gender: ");
+        sAge= prompt("Enter age: ");
+        m1= prompt("Enter m1 marks: ");
+        m1=parseInt(m1);
+        m2= prompt("Enter m2 marks: ");
+        m2=parseInt(m2);
+        m3= prompt("Enter m3 marks: ");
+        m3=parseInt(m3);
+        sTotal=m1+m2+m3;
+        sAvg=sTotal/3;
+        console.log("Name: "+sName);
+        console.log("Gender: "+sGender);
+        console.log("Age: "+sAge);
+        console.log("Total: "+sTotal);
+        console.log("Avg: "+sAvg);
+        if(sAvg>=40){
+            console.log("Student got Passed")
+        }
+        if(sAvg<40){
+            console.log("Student got Failed")
+        }
+        
+        
+    </script>
+</body>
+</html>

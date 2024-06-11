@@ -1,0 +1,8 @@
+class Access4{
+	public static void main(String[] args){
+		add(2,3);
+		ArrayMul A=new ArrayMul();
+		System.out.println(A.a);
+		System.out.println(A.b);
+	}
+}

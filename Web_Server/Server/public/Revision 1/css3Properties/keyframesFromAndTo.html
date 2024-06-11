@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>keyframesFromAndTo</title>
+        <style>
+            body{
+                background-color:lightgreen;
+            }
+            .box{
+                border: 2px solid;
+                height: 120px;
+                width: 120px;
+                text-align: center;
+                position: absolute;
+                background-color: aqua;
+                animation: myStyles 5s infinite;
+            }
+            
+            @keyframes myStyles{
+                from{
+                    border-radius: 10px;
+                    left: 10px;
+                    background-color: yellow;
+                }
+                to{
+                    right: 10px;
+                    background-color: pink;
+                    border-radius: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <div class="box">Box</div>
+    </body>
+</html>

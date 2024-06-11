@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>assignment_4_1</title>
+		<style type="text/css">
+			.heading, .foot{
+				border: 2px solid;
+				height: 30px;
+				text-align: center;
+				margin: 5px;
+				padding: 5px;
+			}
+			.content{
+				border: 2px solid;
+				height: 600px;
+				margin: 5px;
+				padding: 5px;
+			}
+			.L, .R{
+				float: left;
+				border: 2px solid;
+				margin: 10px;
+				height: 580px;
+			}
+			.L{
+				width: 30%;
+
+			}
+			.R{
+				width: 66%;
+				overflow: auto;
+			}
+			.name{
+				border: 2px solid;
+				margin: 20px;
+				list-style-position: inside;
+				padding: 5px;
+				width: 300px;
+			}
+			.content1{
+				border: 2px solid;
+				height: 150px;
+				list-style: none;
+				margin: 5px;
+			}
+			ul,ol{
+				margin: 5px;
+				padding: 5px;
+			}
+			.imgdimentions{
+				
+				height: 125px;
+				width: 125px;
+				margin: 10px;
+			}
+			.none{
+				list-style: none;
+			}
+			.img{
+				background-image: url("Images/imagespriting1.png");
+			}
+			.img1{
+				background-position: 141px -9px;
+			}
+			.img2{
+				background-position: -210px -235px;
+			}
+			.img3{
+				background-position: 329px -16px;
+			}
+			.img4{
+				background-position: 349px 222px;
+			}
+			.img, .details{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heading">Student Details</div>
+		<div class="content">
+			<div class="L">
+				<ol>
+					<li class="name">Teena</li>
+					<li class="name">Meena</li>
+					<li class="name">Raj</li>
+					<li class="name">
+						<a href="#kajaDetails">Kaja</a>
+					</li>
+				</ol>
+			</div>
+			<div class="R">
+				<ul>
+					<li class="content1">
+						<div class="imgdimentions img img1"></div>
+						<div class="details">
+							<ol>
+								<li class="none">
+									<div>Name: Teena</div>
+									<div>Age: 22</div>
+									<div>Gender: Female</div>
+									<div>Branch: CSE</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+					<li class="content1">
+						<div class="imgdimentions img img2"></div>
+						<div class="details">
+							<ol>
+								<li class="none">
+									<div>Name: Meena</div>
+									<div>Age: 22</div>
+									<div>Gender: Female</div>
+									<div>Branch: CSE</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+					<li class="content1">
+						<div class="imgdimentions img img3"></div>
+						<div class="details">
+							<ol>
+								<li class="none">
+									<div>Name: Raj</div>
+									<div>Age: 22</div>
+									<div>Gender: Male</div>
+									<div>Branch: ECE</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+					<li class="content1">
+						<div class="imgdimentions img img4"></div>
+						<div class="details">
+							<ol>
+								<li class="none" id="kajaDetails">
+									<div>Name: Kaja</div>
+									<div>Age: 22</div>
+									<div>Gender: Male</div>
+									<div>Branch: ECE</div>
+								</li>
+							</ol>
+						</div>
+					</li>
+			</div>
+		</div>
+		<div class="foot">@copyright 2023</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+class Testing{
+	public static void main(String[] args){
+		Exp1 e1=new Exp1();
+		Exp1[] e3={new Exp1(),new Exp1()};
+		System.out.println(e1.i);
+		System.out.println(e3[0].i);
+	}
+
+}

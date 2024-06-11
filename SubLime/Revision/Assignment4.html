@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 4</title>
+		<style type="text/css">
+			.header,.maincontainer,.footer{
+				border: 2px solid;
+				padding: 5px;
+				position: absolute;
+				left: 5px;
+				right: 5px;
+			}
+			.header, .footer{
+				text-align: center;
+			}
+			.header{
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.footer{
+				bottom: 10px;
+			}
+			.maincontainer{
+				top: 45px;
+				bottom: 45px;
+				overflow: auto;
+			}
+			.left, .right{
+				border: 2px solid;
+				float: left;
+				margin: 10px;
+				height: 600px;
+			}
+			.left{
+				width: 30%;
+
+			}
+			.right{
+				width: 66%;
+				overflow: auto;
+			}
+			ol li{
+				border: 2px solid;
+				width: 100px;
+				margin: 10px;
+				padding: 5px;
+				list-style-position: inside;
+			}
+			.rightside > li{
+				border: 2px solid;
+				list-style: none;
+				height: 160px;
+				margin: 2px;
+			}
+			.image, .details{
+				float: left;
+				margin: 10px;
+			}
+			.image{
+				border: 2px solid;
+				width: 150px;
+				height: 140px;
+				background: url(file:///D:/SubLime/Revision/Image/ImageSpriting.png);
+			}
+			.student1{
+				background-position: -13px -2px;
+			}
+			.student2{
+				background-position: -201px -13px;
+			}
+			.student3{
+				background-position: -399px -11px;
+			}
+			.student4{
+				background-position: -8px -232px;
+			}
+			.student5{
+				background-position: -13px -2px;
+			}
+			.rightside li{
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">Student Details</div>
+		<div class="maincontainer">
+			<div class="left">
+				<ol>
+					<li>Raj</li>
+					<li>Meena</li>
+					<li>Teena</li>
+					<li>Siri</li>
+					<li>Sai</li>
+				</ol>
+			</div>
+			<div class="right">
+				<ul class="rightside">
+					<li>
+						<div class="image student1"></div>
+						<div class="details">
+							<ul>
+								<li>
+									<div>Name: Raj</div>
+									<div>Age: 20</div>
+									<div>Gender: Male</div>
+									<div>Branch: ECE</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="image student2"></div>
+						<div class="details">
+							<ul>
+								<li>
+									<div>Name: Teena</div>
+									<div>Age: 22</div>
+									<div>Gender: Female</div>
+									<div>Branch: CSE</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="image student3"></div>
+						<div class="details">
+							<ul>
+								<li>
+									<div>Name: Meena</div>
+									<div>Age: 19</div>
+									<div>Gender: Male</div>
+									<div>Branch: ECE</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="image student4"></div>
+						<div class="details">
+							<ul>
+								<li>
+									<div>Name: Siri</div>
+									<div>Age: 20</div>
+									<div>Gender: Female</div>
+									<div>Branch: IT</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="image student5"></div>
+						<div class="details">
+							<ul>
+								<li>
+									<div>Name: Sai</div>
+									<div>Age: 23</div>
+									<div>Gender: Male</div>
+									<div>Branch: ECE</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">@Copyright2023</div>
+	</body>
+</html>

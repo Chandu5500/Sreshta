@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readingDataFromTheUserAndValidating</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Enter First Value: <input type="text" id="fVal" onkeypress="return validUserInput(event);">
+                <div class="error fValErr">First Value is Mandatory</div>
+            </li>
+            <li>Enter Second Value: <input type="text" id="sVal" onkeypress="return validUserInput(event);">
+                <div class="error sValErr">Second Value is Mandatory</div>
+            </li>
+            <li><input type="button" value="Add Values" onclick="addValues() "></li>
+            <li class="rContainer">The Sum of Two numbers is:<span class="rBlock"></span></li>
+        </ul>
+    </div>
+    <div>The Sum value is <span></span></div>
+</body>
+</html>

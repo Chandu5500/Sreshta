@@ -1,0 +1,28 @@
+h3{
+    border: 2px solid;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+table, 
+.mainContainer{
+    border: 2px solid;
+    width: 500px;
+    margin: 10px auto;
+    background-color: #ccc;
+}
+th,td,li{
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+}
+ul{
+    padding: 0px;
+}
+
+.center{
+    text-align: center;
+}

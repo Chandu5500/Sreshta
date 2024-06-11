@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classesDemo1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //Way 1
+            class sampleInfo{
+                constructor(){
+                    this.name="The Everything";
+                    this.price=2000;
+                    this.author="kedar"
+                }
+            }
+            var p1=new sampleInfo();
+            console.log(p1);
+
+            //way 2
+            class sampleDetails{
+                constructor(name,price,author){
+                    this.name=name;
+                    this.price=price;
+                    this.author=author
+                }
+            }
+            var p2=new sampleDetails("The Assam",500,"Kaja");
+            console.log(p2);
+
+            //Way 3
+            class sampleData{
+                constructor(obj){
+                    this.name=obj.bname;
+                    this.price=obj.bprice;
+                    this.author=obj.bauthor;
+                }
+            }
+
+            var obj={
+                bname:"The king",
+                bprice:5000,
+                bauthor:"Basha"
+            }
+            var p3=new sampleData(obj);
+            console.log(p3);
+
+            //Way 4
+            class sampleData1{
+                constructor(obj){
+                    this.name=obj.bname;
+                    this.price=obj.bprice;
+                    this.author=obj.bauthor;
+                }
+            }
+            var p4=new sampleData1({bname:"The Printer", bprice:1000, bauthor:"Meena"});
+            console.log(p4);
+        </script>
+    </body>
+</html>

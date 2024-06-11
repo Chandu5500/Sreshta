@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment_7</title>
+</head>
+<body>
+    <div>Employee Details</div>
+    <script type="text/javascript">
+        var eName, eGender, eAge, eDept, eBasicSalary, ePF, eHRA, eTotalSalary,eTax;
+        eName= prompt("Enter Name: ");
+        eGender= prompt("Enter Gender: ");
+        eAge= prompt("Enter Age: ");
+        eDept= prompt("Enter Dept: ");
+        eBasicSalary= prompt("Enter Basic Salary: ");
+        eBasicSalary=parseInt(eBasicSalary)
+        ePF=(eBasicSalary*14)/100;
+        eHRA=(eBasicSalary*24)/100;
+        eTotalSalary=eBasicSalary+ePF+eHRA;
+        console.log("Name: "+eName);
+        console.log("Gender: "+eGender);
+        console.log("Age: "+eAge);
+        console.log("Dept: "+eDept);
+        console.log("Basic Salary: "+eBasicSalary);
+        console.log("Total Salary: "+eTotalSalary);
+        if (eGender=="Male"){
+            if(eTotalSalary>=500000){
+                eTax=(eTotalSalary/100)*15;
+                console.log(eTax);
+            }
+            if(eTotalSalary>=300000){
+                eTax=(eTotalSalary/100)*10;
+                console.log(eTax);
+            }
+            if(eTotalSalary>=200000){
+                eTax=(eTotalSalary/100)*5;
+                console.log(eTax);
+            }
+            else{
+                console.log("NO TAX");
+            }
+        }
+        if (eGender=="Female"){
+            if(eTotalSalary>=500000){
+                eTax=(eTotalSalary/100)*10;
+                console.log(eTax);
+            }
+            if(eTotalSalary>=300000){
+                eTax=(eTotalSalary/100)*5;
+                console.log(eTax);
+            }
+            else{
+                console.log("NO TAX");
+            }
+        }
+    </script>
+</body>
+</html>

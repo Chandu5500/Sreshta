@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arrayMapMethod</title>
+    </head>
+    <body>
+        <script>
+            var data=[55,21,63,87,12]
+            
+            /*var powerArray=[];
+            for (var i=0; i<data.length; i++){
+                powerArray.push(data[i]**2);
+            }*/
+
+            var powerArray=data.map((a)=>{
+                return a**2;
+            })
+            console.log(powerArray)
+        </script>
+    </body>
+</html>

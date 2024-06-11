@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>localStorageAndSessionStorage</title>
+        <style>
+            #theme{
+                position: relative;
+                text-align: left;
+            }
+            .welBlock{
+                border: 2px solid;
+                background-color: aqua;
+                width: 300px;
+                position: absolute;
+                top: 30%;
+                left: 40%;
+                padding: 10px;
+                text-align: center;
+                display: none;
+            }
+            #themeBlock{
+                text-align: right;
+            }
+        </style>
+        <script src="../jquery_compressed.js"></script>
+    </head>
+    <body>
+        <div id="themeBlock">Theme Chooser: <input type="color" class="seletedColor" onchange="applyTheme()">
+            <!---<select class="seletedColor" onchange="applyTheme()">
+                <option>red</option>
+                <option>blue</option>
+                <option>green</option>
+                <option>yellow</option>
+            </select>-->
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Name" id="uName">
+            <input type="button" value="Save Name" onclick="saveDetails()">
+        </div>
+        <div class="welBlock"></div>
+        
+        <script>
+            var showWelcome=(name)=>{
+                var msg="Thanks for Visiting Mr. "+name;
+                $(".welBlock").text(msg).show(1000);
+            }
+            if(localStorage.getItem("userName")!=null){
+                showWelcome(localStorage.getItem("userName"));
+            }
+            var saveDetails=()=>{
+                var uName=$("#uName").val();
+                localStorage.setItem("userName",uName)
+                showWelcome(uName);
+            }
+            
+            var themeColor=(colorName)=>{
+                $("body").css("background", colorName)
+            }
+            if(localStorage.getItem("userColor")!=null){
+                themeColor(localStorage.getItem("userColor"));
+            }
+            var applyTheme=()=>{
+                var color=$(".seletedColor").val();
+                localStorage.setItem("userColor",color)
+                themeColor(color)
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prime number or not</title>
+	</head>
+	<body>
+		<div>Prime number or not</div>
+		<script type="text/javascript">
+			var n=6;
+			var rem=0;
+			var count=0;
+			for (var i=2;i<n;i++){
+				rem=n%i;
+				if (rem==0){
+					count++;
+					break;
+				}
+			}
+			if (count==0){
+				console.log("It is Prime")
+			}
+			else{
+				console.log("It is not Prime")
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>userDefinedExceptions</title>
+        <style>
+            ul{
+                border: 2px solid;
+                margin: 10px auto;
+                width: 400px;
+                padding: 0px;
+            }
+            li{
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid;
+            }
+            .err, .err1{
+                color: red;
+                font-size: 13px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>Enter User Name: <input type="text" id="uName">
+                    <div class="err">User Name is Mandatory</div>
+                </li>
+                <li>Enter User Age: <input type="text" id="uAge">
+                    <div class="err1">Age under 21 is not Accepted</div>
+                </li>
+                <li><input type="button" value="Register" onclick="regButton()"></li>
+            </ul>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

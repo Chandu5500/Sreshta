@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>funcParametersWithDefaultValues</title>
+    </head>
+    <body>
+        <script>
+            var addValues=(a=0,b=0,c=0)=>{
+                var result=0;
+                result=a+b+c;
+                console.log("The sum of Values: "+result);
+            };
+            addValues(10,20);
+            addValues(10);
+            addValues();
+        </script>
+    </body>
+</html>

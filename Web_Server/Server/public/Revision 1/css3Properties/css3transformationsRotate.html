@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css3TransformationsRotate</title>
+        <style>
+            .container{
+                border: 2px solid;
+                position: absolute;
+                width: 300px;
+                top: 40%;
+                left: 40%;
+                text-align: center;
+                background-color: yellow;
+                padding: 30px;
+                border-radius: 5px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">Hello</div>
+        <script>
+            /*var degVal=5;
+            setInterval(()=>{
+                degVal+=5;
+                var angWithDeg=degVal+"deg"
+                document.querySelector(".container").style.transform='rotate('+angWithDeg+')'
+                if(degVal==360){
+                    degVal=0;
+                }
+            },100)*/
+
+            var x=5;
+            var y=10;
+            var z=15;
+            var degVal=0
+            setInterval(()=>{
+                x++;
+                y++;
+                z++;
+                degVal+=5;
+                var angWithDeg=degVal+"deg";
+                document.querySelector(".container").style.transform='rotate3D('+x+','+y+','+z+','+angWithDeg+')'
+            },100)
+        </script>
+    </body>
+</html>

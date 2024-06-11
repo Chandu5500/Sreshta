@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>web_workers</title>
+        <style>
+            .container{
+                background: #ccc;
+                margin: 5px;
+                padding: 5px;
+            }
+            li{
+                text-align: center;
+                border: 2px solid blue;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+                background: white;
+            }
+            .dateContainer{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dateContainer">
+            Time: <span></span>
+        </div>
+        <ul class="container">
+
+        </ul>
+        <script>
+            var myworker=new Worker("dateWorker.js")
+            
+            count=0
+            setInterval(()=>{
+                count++
+                var liTag=document.createElement("li");
+                liTag.innerText="Item"+ count
+                document.querySelector(".container").append(liTag);
+            },1000)
+            var showDate=()=>{
+                var date=new Date();
+                document.querySelector("span").innerText=date;
+            }
+            showDate();
+        </script>
+    </body>
+</html>

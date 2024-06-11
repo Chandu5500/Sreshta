@@ -1,0 +1,24 @@
+<div class="loginContainer">
+    <h1>Hello!</h1>
+    <h1>Welcome to our store.</h1>
+    <h1>Please Login</h1>
+    <div>
+        <label class="label">Email ID/Phone number</label>
+        <div>
+            <input type="text" placeholder="Enter Email ID/Phone number" class="box" id="userId">
+        </div>
+    </div>
+    <div>
+        <label class="label">Password</label>
+        <div>
+            <input type="password" placeholder="Enter your password" class="box" id="userPsw">
+        </div> 
+    </div>
+    <div class="errBlock">Invalid Credentials! try again</div>
+    <div class="fgtPwd"><a href="#" onclick="loadTemplate('forgotPsw')">Forgot Password?</a></div>
+    <input type="submit" class="btn" value="Login" onclick="validateUserData()">
+    <div>
+        <div class="fgtPwd">Don't have an account?&nbsp<a href="#" onclick="loadTemplate('signup')">Signup</a></div>
+    </div>
+
+</div>

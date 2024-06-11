@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>form_Tag1</title>
+		<style type="text/css">
+			.head{
+				border: 2px solid;
+				margin: 5px;
+				padding: 5px;
+				text-align: center;
+
+			}
+			ul{
+				border: 2px solid;
+				width: 600px;
+				margin: 10px auto;
+			}
+			li{
+				border: 1px solid #ccc;
+				list-style: none;
+				margin: 10px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">Students Registration Form</div>
+		<form action="http://www.abc.com" method="GET">
+			<ul>
+				<li><label for="Uname" >Enter User Name: </label><input type="text" name="Uname" placeholder="Enter User Name" maxlength="8"></li>
+				<li><label for="AccID">Enter User Account ID: </label><input type="text" name="AccID" placeholder="Enter User Account ID" required></li>
+				<li><label for="password">Enter User Account Password: </label><input type="password" name="password" placeholder="Password"></li>
+				<li><label for="Gender">Gender: </label><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</li>
+				<li><label for="lng_eng lng_hin lng_tel">Languages you know: </label>
+					<input type="checkbox" name="lng_eng">English
+					<input type="checkbox" name="lng_hin">Hindi
+					<input type="checkbox" name="lng_tel">Telugu
+				</li>
+				<li><label>Country: </label>
+					<select>
+						<option>Andhra Pradesh</option>
+						<option>Sri lanka</option>
+						<option>Telangana</option>
+					</select>
+				</li>
+				<li><lable>Resume: </lable><input type="file"></input></li>
+				<li><label>Tell about yourself: </label>
+					<textarea rows="20" cols="50"></textarea>
+				</li>
+				<li style="text-align: center;"><input type="reset" value="Reset"><input type="submit" value="Upload"></input></input></li>
+			</ul>
+		</form>
+	</body>
+</html>

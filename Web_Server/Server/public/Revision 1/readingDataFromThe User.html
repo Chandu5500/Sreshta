@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readingDataFromTheUser</title>
+    <style>
+        ul{
+            border: 2px solid;
+            width: 400px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        li{
+            border: 2px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+        }
+        .rContainer{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Enter First Value: <input type="text" id="fVal"></li>
+            <li>Enter Second Value: <input type="text" id="sVal"></li>
+            <li><input type="button" value="Add Values" onclick="addValues()"></li>
+            <li class="rContainer">The Sum of Two numbers is:<span class="rBlock"></span></li>
+        </ul>
+    </div>
+    <div>The Sum value is <span></span></div>
+    <script type="text/javascript">
+        /*var a=prompt("Enter First Value: ");
+        a=parseInt(a);
+        var b=prompt("Enter Second value: ");
+        b=parseInt(b);
+        var sum=0;
+        sum=a+b;
+        document.querySelector("span").innerText=sum;*/
+        
+        var addValues=()=>{
+            var a=document.querySelector("#fVal").value;
+            a=parseInt(a);
+            var b=document.querySelector("#sVal").value;
+            b=parseInt(b);
+            var result=a+b;
+            document.querySelector(".rBlock").innerHTML=result;
+            document.querySelector(".rContainer").style.display="block";
+        }
+        
+    </script>
+</body>
+</html>

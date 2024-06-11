@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mapDataStructure</title>
+    </head>
+    <body>
+        <script>
+            var m1=new Map();//map object was created dynamically
+            m1.set("name", "chandu");
+            m1.set("age", 20);
+            m1.set("gender", "male");
+            m1.set("Qualification", "garduate");
+
+            console.log(m1.get("gender"));
+            console.log(m1.size);
+
+            for(let[key,value] of m1.entries()){
+                console.log(key);
+                console.log(value);
+            }
+
+        </script>
+    </body>
+</html>

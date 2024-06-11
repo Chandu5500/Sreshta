@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employeeDetailswithJSON</title>
+</head>
+<body>
+    <div>Employee Details With JSON</div>
+    <script type="text/javascript">
+        var empDetails={
+            readData: function(){
+                this.name=prompt("Enter Emp Name: ");
+                this.age=prompt("Enter Emp Age: ");
+                this.gender=prompt("Enter Emp Gender: ");
+                this.dept=prompt("Enter Emp Department: ");
+                this.basicSal=prompt("Enter Emp Basic Salary: ");
+                this.basicSal=parseInt(this.basicSal)
+                this.pfAndHra();
+            },
+            pfAndHra: function(){
+                this.pf=(this.basicSal*14)/100;
+                this.hra=(this.basicSal*24)/100;
+                this.totalSal=this.basicSal+this.pf+this.hra;
+                this.totalTax();
+            },
+            totalTax: function(){
+                this.taxpercent=0;
+                if (this.gender.toLowerCase()=="male"){
+                    if(this.totalSal>=300000){
+                        this.taxpercent=15;
+                    }
+                    else if(this.totalSal>=200000){
+                        this.taxpercent=10;
+                    }
+                }
+                else{
+                    if(this.totalSal>=300000){
+                        this.taxpercent=10;
+                    }
+                    else if(totalSal>=200000){
+                        this.taxpercent=5;
+                    }
+                }
+                this.taxValue=(this.totalSal*this.taxpercent)/100
+                this.dispalyDetails();
+            },
+            dispalyDetails: function(){
+                console.log("Name:"+this.name);
+                console.log("Age:"+this.age);
+                console.log("Gender:"+this.gender);
+                console.log("Department:"+this.dept);
+                console.log("Basic Salary:"+this.basicSal);
+                console.log("PF:"+this.pf);
+                console.log("HRA:"+this.hra);
+                console.log("Total Salary:"+this.totalSal);
+                console.log("Tax Percent:"+this.taxpercent);
+                console.log("Tax value:"+this.taxValue);
+            }
+        }
+        empDetails.readData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid;
+    margin: 10px auto;
+    width: 400px;
+}
+.heading{
+    text-align: center;
+    color: blue;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
+.registerBtn{
+    text-align: center;
+}

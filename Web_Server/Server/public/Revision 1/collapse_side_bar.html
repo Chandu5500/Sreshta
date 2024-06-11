@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapseSideBar</title>
+    <style>
+        .sidebar{
+            border: 2px solid;
+            height: 500px;
+            width: 200px;
+            text-align: center;
+            background: #ccc;
+            position: relative;
+            left: -10px;
+            transition: left 3s;
+        }
+        .arrow{
+            cursor: pointer;
+            position: absolute;
+            left: 101%;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>Collapse Side Bar</div>
+    <div class="sidebar">
+        <div class="arrow" onclick="doAction()"><<</div>
+    </div>
+    <script>
+        var sideBarStatus='expanded';
+        var doAction= ()=>{
+            if (sideBarStatus=='expanded'){
+                document.querySelector(".sidebar").style.left='-210px';
+                sideBarStatus="minimised";
+            }else{
+                document.querySelector(".sidebar").style.left='-10px';
+                sideBarStatus="expanded";
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

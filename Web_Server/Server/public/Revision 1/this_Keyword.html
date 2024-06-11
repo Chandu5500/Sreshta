@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this_keyword</title>
+</head>
+<body>
+    <div>this_keyword</div>
+    <script type="text/javascript">
+        var sData={
+            name:"Don",
+            gender:"male",
+            age:20,
+            marks:[40,40,40,40,40],
+            total_avg: function(){
+                this.total=0;
+                for(var i=0; i<this.marks.length;i++){
+                    this.total+=this.marks[i];
+                }
+                sData.avg=this.total/this.marks.length; 
+            },
+            grade: function(){
+                if (this.avg>=40){
+                    console.log("Pass");
+                }else{
+                    console.log("Surprise");
+                }
+            
+            },
+            displayDetails: function(){
+                this.total_avg()
+                console.log("Name: "+this.name);
+                console.log("Age: "+this.age);
+                console.log("Gender: "+this.gender);
+                console.log("marks: "+this.marks);
+                console.log("Total: "+this.total);
+                console.log("Avg: "+this.avg);
+                this.grade();
+            }
+        }
+        sData.displayDetails();
+    </script>
+</body>
+</html>

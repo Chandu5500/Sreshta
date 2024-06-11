@@ -1,0 +1,4 @@
+class ArrayMul{
+	void add(int[] i){
+	}
+}

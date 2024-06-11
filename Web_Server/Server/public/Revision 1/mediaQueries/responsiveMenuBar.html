@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsiveMenuBar</title>
+        <script src="../jquery_compressed.js"></script>
+        <style>
+            .containerTab{
+                display: flex;
+                
+            }
+            .tab{
+                border: 2px solid;
+                padding: 10px;
+            }
+            .tab:hover{
+                background-color: aquamarine;
+                cursor: pointer;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            .menuIcon{
+                text-align: right;
+                display: none;
+            }
+
+            @media screen and (min-width: 350px) and (max-width: 400px){
+                .containerTab{
+                    flex-direction: column;
+                    display: none;
+                }
+                .menuIcon{
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menuIcon"><img onclick="showMe()" src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-3.jpg"></div>
+        <div class="containerTab">
+            <div class="tab">Home</div>
+            <div class="tab">Carear</div>
+            <div class="tab">History</div>
+            <div class="tab">Support</div>
+            <div class="tab">Contact us</div>
+        </div>
+        <script>
+            var showMe=()=>{
+                $(".containerTab").slideToggle(1000);
+            }
+        </script>
+    </body>
+</html>

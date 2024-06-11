@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>studentProgressCardDetails</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3>Student Progress Card Generator</h3>
+        <ul class="readDetailsBlock">
+            <li>
+                <div class="label">Name: </div>
+                <div class="controller"><input type="text" id="sName"></div>
+            </li>
+            <li>
+                <div class="label">Age:</div>
+                <div class="controller"><input type="text" id="sAge"></div>
+            </li>
+            <li>
+                <div class="label">Gender: </div>
+                <div class="controller">
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </div>
+                
+            </li>
+            <li>
+                <div class="label">Class: </div>
+                <div class="controller">
+                    <select class="sClass">
+                        <option>Class I</option>
+                        <option>Class II</option>
+                        <option>Class III</option>
+                        <option>Class IV</option>
+                    </select>
+                </div>
+                
+            </li>
+            <li class="marksBlock">
+                <div class="label">Marks:</div>
+                <div class="controller">
+                    <input type="text" id="m1">
+                    <input type="text" id="m2">
+                    <input type="text" id="m3">
+                    <input type="text" id="m4">
+                    <input type="text" id="m5">
+                </div>
+                
+            </li>
+            <li><input type="button" value="Generate Progress Card" onclick="generateProgressCard()"> </li>
+        </ul>
+        <br>
+        <ul class="displayBlock">
+            <li>Student Name: <span id="dname"></span></li>
+            <li>Age: <span id="dage"></span></li>
+            <li>Gender: <span id="dgender"></span></li>
+            <li>Class: <span id="dclass"></span></li>
+            <li>Marks: <span id="dmarks"></span></li>
+            <li>Total: <span id="dtotal"></span></li>
+            <li>Avg: <span id="davg"></span></li>
+            <li>Grade: <span id="dgrade"></span></li>
+        </ul>
+        <script src="app.js"></script>
+    </body>
+</html>

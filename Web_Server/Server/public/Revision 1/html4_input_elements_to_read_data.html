@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>html4_input_elements_to_read_data</title>
+		<style type="text/css">
+			.head{
+				border: 2px solid;
+				margin: 5px;
+				padding: 5px;
+				text-align: center;
+
+			}
+			ul{
+				border: 2px solid;
+				width: 600px;
+				margin: 10px auto;
+			}
+			li{
+				border: 1px solid #ccc;
+				list-style: none;
+				margin: 10px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">Students Registration Form</div>
+		<ul>
+			<li><label for="Uname" >Enter User Name: </label><input type="text" name="Uname" placeholder="Enter User Name"></li>
+			<li><label for="AccID">Enter User Account ID: </label><input type="text" name="AccID" placeholder="Enter User Account ID"></li>
+			<li><label for="password">Enter User Account Password: </label><input type="password" name="password" placeholder="Password"></li>
+			<li><label for="Gender">Gender: </label><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</li>
+			<li><label for="Language">Languages you know: </label>
+				<input type="checkbox" name="Language">English
+				<input type="checkbox" name="Language">Hindi
+				<input type="checkbox" name="Language">Telugu
+			</li>
+			<li><label>Country: </label>
+				<select>
+					<option>Andhra Pradesh</option>
+					<option>Sri lanka</option>
+					<option>Telangana</option>
+				</select>
+			</li>
+			<li><label>Tell about yourself: </label>
+				<textarea rows="20" cols="50"></textarea>
+			</li>
+			<li style="text-align: center;"><input type="button" value="Save Data"></input></li>
+		</ul>
+	</body>
+</html>

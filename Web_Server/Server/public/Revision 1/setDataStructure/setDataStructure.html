@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>setDataStructure</title>
+    </head>
+    <body>
+        <script>
+            var s1=new Set();//set was created dynamically
+            s1.add(10);
+            s1.add(30);
+            s1.add(50);
+            s1.add(50);
+            s1.add(70);
+            s1.add([50,60,40,80]);
+            for(let [value] of s1.entries()){
+                console.log(value)
+                if(typeof(value)=='object'){
+                    console.log(value[3])
+                }
+            }
+            console.log(s1)
+            console.log("Size: "+s1.size)
+        </script>
+    </body>
+</html>

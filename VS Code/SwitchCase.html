@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SwitchCase</title>
+    </head>
+    <body>
+        <div>Switch Case</div>
+        <script>
+            var a=prompt("Enter a value: ");
+            a=parseInt(a);
+            var b=prompt("Enter b value: ");
+            b=parseInt(b);
+            var result;
+            var useroption=prompt("Choose 1.add 2.sub 3.mul 4.div");
+            /*if (useroption=='add'){
+                result=a+b;
+                console.log("Add Result: "+ result);
+            }
+            else if (useroption=='sub'){
+                result=a-b;
+                console.log("Sub Result: "+ result);
+            }
+            else if (useroption=='div'){
+                result=a/b;
+                console.log("Div Result: "+ result);
+            }
+            else if (useroption=='mul'){
+                result=a*b;
+                console.log("Mul Result: "+ result);
+            }*/
+            //if else condition checks each and every condition it is time consuming
+
+            switch(useroption){
+                case 'add':
+                    result=a+b;
+                    console.log("Add Result: "+ result);
+                case 'sub':
+                    result=a-b;
+                    console.log("Sub Result: "+ result);
+                case 'div':
+                    result=a/b;
+                    console.log("Div Result: "+ result);
+                case 'mul':
+                    result=a*b;
+                    console.log("Mul Result: "+ result);
+            }
+        </script>
+    </body>
+</html>

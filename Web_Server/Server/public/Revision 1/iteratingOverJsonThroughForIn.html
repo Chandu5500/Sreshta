@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iteratingOverJsonThroughForIn</title>
+</head>
+<body>
+    <div>iteratingOverJsonThroughForIn</div>
+    <script type="text/javascript">
+        var sData={
+            name:"Siri",
+            age:12,
+            gender:"Female",
+            marks:[88,99,98],
+            location:"Hyd"
+        }
+        for(var samplekey in sData){
+            console.log(samplekey); //Shows only key values
+            console.log(sData[samplekey]); //Shows Data
+        }
+    </script>
+</body>
+</html>

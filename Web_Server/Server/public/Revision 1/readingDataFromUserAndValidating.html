@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readingDataFromTheUserAndValidating</title>
+    <style>
+        ul{
+            border: 2px solid;
+            width: 400px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        li{
+            border: 2px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+        }
+        .rContainer{
+            display: none;
+        }
+        .error{
+            color: red;
+            font-size: 11px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Enter First Value: <input type="text" id="fVal">
+                <div class="error fValErr">First Value is Mandatory</div>
+            </li>
+            <li>Enter Second Value: <input type="text" id="sVal">
+                <div class="error sValErr">Second Value is Mandatory</div>
+            </li>
+            <li><input type="button" value="Add Values" onclick="addValues() "></li>
+            <li class="rContainer">The Sum of Two numbers is:<span class="rBlock"></span></li>
+        </ul>
+    </div>
+    <div>The Sum value is <span></span></div>
+    <script type="text/javascript">
+        
+        var addValues=()=>{
+            var a=document.querySelector("#fVal").value;
+            a=a.trim();
+            if(a==''){
+                document.querySelector(".fValErr").style.display="block";
+            }else{
+                document.querySelector(".fValErr").style.display="none";
+            }
+            a=parseInt(a); 
+            var b=document.querySelector("#sVal").value;
+            b=b.trim();
+            if(b==''){
+                document.querySelector(".sValErr").style.display="block";
+            }else{
+                document.querySelector(".sValErr").style.display="none";
+            }
+            b=parseInt(b);
+            var result=a+b;
+            document.querySelector(".rBlock").innerHTML=result;
+            document.querySelector(".rContainer").style.display="block";
+        }
+        
+    </script>
+</body>
+</html>

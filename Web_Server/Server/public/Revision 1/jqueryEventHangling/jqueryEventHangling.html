@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jqueryEventHangling</title>
+        <script src="jquery_compressed.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="button" value="Apply" id="btn">
+        </div>
+        
+        <script>
+            /*document.querySelector("#btn").addEventListener("click",()=>{
+                console.log("Click Happened")
+            })*/
+
+            /*$("#btn").click(()=>{
+                console.log("Click Happened")
+            })
+            $("#btn").mouseover(()=>{
+                console.log("Mouse Over")
+            })*/
+
+            /*var userAction="click"
+            $("#btn").on(userAction, ()=>{
+                console.log("Click Happened")
+            })
+
+            $("#btn").on("mouseover", ()=>{
+                console.log("Mouse Overed")
+            })*/
+
+            $("#btn").on({
+                "click":()=>{
+                    console.log("Click Happened")
+                },
+                "mouseover":()=>{
+                    console.log("Mouse Overed")
+                }
+            })
+        </script>
+    </body>
+</html>

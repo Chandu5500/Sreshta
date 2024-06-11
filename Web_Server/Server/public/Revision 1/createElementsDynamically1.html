@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElementsDynamically1</title>
+</head>
+<body>
+    <div  class="container">Creating Elements Dynamically1</div>
+    <script type="text/javascript">
+        var dTag=prompt("Enter wanted Tag: ")
+        var dText=prompt("Enter Text: ");
+        var dName=prompt("Enter name: ");
+        var dColor=prompt("Enter color: ");
+        var dBackground=prompt("Enter background: ");
+
+        var sampleTag=document.createElement(dTag);
+        
+        sampleTag.innerText=dText;
+        //sampleTag.setAttribute("type","text");
+        sampleTag.setAttribute("name",dName);
+        sampleTag.setAttribute("class","fourth");
+        sampleTag.setAttribute("id","123");
+        sampleTag.style.color=dColor;
+        sampleTag.style.background=dBackground;
+        
+        document.querySelector(".container").append(sampleTag);
+        console.log(sampleTag);
+    </script>
+</body>
+</html>

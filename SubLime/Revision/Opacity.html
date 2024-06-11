@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Opacity</title>
+		<style type="text/css">
+			.container{
+				border: 2px solid;
+				height: 120px;
+				width: 120px;
+			}
+			.block1{
+				background: grey;
+			}
+			.block2{
+				background: yellow;
+				position: relative;
+				top: 20px;
+				left: 60px;
+			}
+			.block3{
+				background: blue;
+				position: relative;
+				z-index: 3;
+			}
+			.block4{
+				background: green;
+				position: relative;
+				top:30px;
+				left: 40px;
+				opacity: 0.3;
+			}
+			.block5{
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container block1">Block 1</div>
+		<div class="container block2">Block 2</div>
+		<div class="container block3">Block 3</div>
+		<div class="container block4">Block 4</div>
+		<div class="container block5">Block 5</div>
+	</body>
+</html>

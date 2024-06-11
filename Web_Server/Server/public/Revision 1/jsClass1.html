@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jsClass1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class products{
+                constructor(obj){
+                    this.name=obj.name;
+                    this.price=obj.price;
+                    this.discountPercent=obj.discountPercent;
+                    this.manufacturor=obj.manufacturor;
+                    this.rating=obj.rating;
+                    this.image=obj.image;
+                }
+                discountPrice(){
+                    this.discountPrice=this.price-((this.price*this.discountPercent)/100);
+                }
+                displayDetails(){
+                    this.discountPrice();
+                    console.log("Product Name: "+this.name);
+                    console.log("Price: "+this.price);
+                    console.log("Discount Price: "+this.discountPrice);
+                    console.log("Discount Percent: "+this.discountPercent);
+                    console.log("Manufacturor: "+this.manufacturor);
+                    console.log("Rating: "+this.rating);
+                    console.log("Image: "+this.image);
+                }
+            }
+            var p1=new products({
+                name:"Laptops",
+                price:60000,
+                discountPercent:10,
+                manufacturor:"Asus Corp",
+                rating:"4.5/5",
+                image:"laptop.img",
+            })
+            p1.displayDetails();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transitionProperty</title>
+        <style>
+            .container{
+                border: 2px solid;
+                padding: 30px;
+                width: 300px;
+                height: 100px;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                text-align: center;
+                background-color: yellow;
+                border-radius: 10px;
+                
+            }
+            .container:hover{
+                width: 400px;
+                height: 200px;
+                transition: height 2s, width 2s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">Hello!</div>
+    </body>
+</html>

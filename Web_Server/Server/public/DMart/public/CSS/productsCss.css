@@ -1,0 +1,57 @@
+.content{
+    position: absolute;
+    top: 6%;
+}
+
+.pBtn{
+    position: absolute;
+    top: 6%;
+}
+
+.price{
+    text-decoration: line-through;
+}
+.discountPrice{
+    color: blue;
+    font-size: 20px;
+}
+
+.pImg{
+    width: 90%;
+    height: 150px;
+    margin: auto;
+}
+ul{
+    margin: 5px;
+    padding: 0px;
+    display: inline-block;
+    width: 19%;
+}
+li{
+    list-style: none;
+    padding: 2px;
+    width: 80%;
+}
+img:hover{
+    cursor: pointer;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    height: 110px;
+}
+
+.logoutBtn, .cart_btn{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.logoutBtn{
+    position: absolute;
+    right: 10px;
+    top: -54px;
+}

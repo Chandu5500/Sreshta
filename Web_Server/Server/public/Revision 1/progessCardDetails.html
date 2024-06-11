@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>progressCardDetails</title>
+    </head>
+    <body>
+        <div>Progress Card Details</div>
+        <script type="text/javascript">
+            var sDetails={
+                readValues(){
+                    this.name=prompt("Enter Name of Student: ");
+                    this.age=prompt("Enter Age:");
+                    this.gender=prompt("Enter Gender: ");
+                    this.class=prompt("Enter Class");
+                    this.marks=[];
+                    for (var i=0; i<5;i++){
+                        this.marks.push(parseInt(prompt("Enter marks "+(i+1))));
+                    }
+                    this.total_avg();
+                },
+                total_avg(){
+                    this.total=0;
+                    for (j=0;j<this.marks.length;j++){
+                        this.total+=this.marks[j];
+                    }
+                    this.avg=0;
+                    this.avg=this.total/this.marks.length;
+                    this.getGrade();
+                },
+                getGrade(){
+                    if(this.avg>=40){
+                        this.grade="Pass";
+                    }
+                    else{
+                        this.garde="Surprise";
+                    }
+                },
+                displayDetails(){
+                    this.readValues();
+                    console.log("Name: "+this.name);
+                    console.log("Age: "+this.age);
+                    console.log("Gender: "+this.gender);
+                    console.log("Class: "+this.class);
+                    console.log("Marks: "+this.marks);
+                    console.log("Total: "+this.total);
+                    console.log("Avg: "+this.avg);
+                    console.log("Grade: "+this.grade);
+                }
+            }
+            sDetails.displayDetails();
+        </script>
+    </body>
+</html>

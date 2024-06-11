@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>asyncAndAwait</title>
+    </head>
+    <body>
+        <script>
+            async function doJob(){
+                var  p1=new Promise((resolve, reject)=>{
+                    if(true){
+                        setInterval(()=>{
+                            resolve("Promise Executed")
+                        },3000)
+                    }
+                })
+
+                console.log("Start")
+                await p1.then((msg)=>{
+                    console.log(msg);
+                });
+                console.log("End");
+            }
+
+            doJob();
+
+        </script>
+    </body>
+</html>

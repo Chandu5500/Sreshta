@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>inheritanceBtwClasses</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class ParentClass{
+                constructor(){
+                    this.a=10;
+                }
+            }
+            class ChildClass extends ParentClass{
+                constructor(){
+                    super();
+                    this.b=20;
+                }
+                displayDetails(){
+                    console.log("Value of b is "+this.b);
+                    console.log("Value of a is "+this.a);
+                }
+            }
+            var p1=new ChildClass();
+            p1.displayDetails();
+        </script>
+    </body>
+</html>

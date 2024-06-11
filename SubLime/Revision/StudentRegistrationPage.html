@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Registration Page</title>
+		<style type="text/css">
+			.heading{
+				border: 2px solid;
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+				margin: 10px auto;
+				padding: 10px 10px;
+			}
+			.body{
+				width: 700px;
+				border: 2px solid;
+				margin: 5px auto;
+			}
+			ul li{
+				border: 1px solid #ccc;
+				list-style: none;
+				margin: 5px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heading">Student Registration Page</div>
+		<form accept="http://www.google.com" method="GET">
+			<div class="body">
+				<ul>
+					<li>
+						<label for="uname">Enter User Name: </label><input type="text" name="uname" placeholder="Name">
+					</li>
+					<li>
+						<label for="uaccountid">Enter Account ID: </label><input type="text" name="uaccountid" placeholder="Acc ID">
+					</li>
+					<li>
+						<label for="upassword">Enter Password: </label><input type="password" name="upassword" placeholder="Password">
+					</li>
+					<li>
+						<label for="gender">Gender: </label><input type="radio" name="gender">Male <input type="radio" name="gender">Female <input type="radio" name="gender">Other
+					</li>
+					<li>
+						<label>Languages Known: </label><input type="checkbox" name="language">English <input type="checkbox" name="language">Telugu <input type="checkbox" name="language">Hindi <input type="checkbox" name="language">Urdu
+					</li>
+					<li>
+						<label>Country: </label>
+						<select>
+							<option>Japan</option>
+							<option>Erope</option>
+							<option>Iran</option>
+							<option>US</option>
+							<option>India</option>
+						</select>
+					</li>
+					<li>
+						<label>Tell about yourself: </label>
+						<textarea cols="80" rows="10" maxlength="100"></textarea>
+					</li>
+					<li style="text-align: center;">
+						<input type="reset" name="">
+						<input type="submit" value="Submit">
+					</li>
+				</ul>
+			</div>
+		</form>
+	</body>
+</html>

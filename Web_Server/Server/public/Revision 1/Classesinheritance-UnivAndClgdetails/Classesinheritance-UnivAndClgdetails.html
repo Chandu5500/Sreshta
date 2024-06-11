@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classesinheritance-UnivAndClgdetails</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">Welcome to Sports Meet-Hyderabad University</div>
+            <ul>
+                <li class="heading1">College Registration Block</li>
+                <li>College Name:<input type="text" id="cname"></li>
+                <li>College Address:<input type="text" id="caddress"></li>
+                <li>College Code:
+                    <select id="ccode">
+                        <option>cs_001</option>
+                        <option>cs_002</option>
+                        <option>cs_003</option>
+                        <option>cs_004</option>
+                    </select>
+                </li>
+                <li class="center1"><input type="button" value="Register College" onclick="collegeDetails()"></li>
+            </ul>
+            <br>
+            <ul>
+                <li class="heading1">Student Registration Block</li>
+                <li>Student Name: <input  type="text" id="sname"></li>
+                <li>Age: <input  type="text" id="sage"></li>
+                <li>Gender: 
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </li>
+                <li>Sports Name: 
+                    <select id="ssport">
+                        <option>Cricket</option>
+                        <option>Foot Ball</option>
+                        <option>Volley Ball</option>
+                        <option>Hokey</option>
+                    </select>
+                </li>
+                <li class="center2"><input type="button" value="Register Student" onclick="studentDetails()"></li>
+            </ul>
+        </div>
+        <br>
+        <div class="container1">
+            <div class="head">Registration Pass</div>
+            <ul>
+                <li>Student Name: <span id="dname"></span></li>
+                <li>Age: <span id="dage"></span></li>
+                <li>Gender: <span id="dgender"></span></li>
+                <li>Opted Sport: <span id="dsport"></span></li>
+                <li>College Name: <span id="dcname"></span></li>
+                <li>College Code: <span id="dccode"></span></li>
+                <li>College Address: <span id="dcaddress"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>

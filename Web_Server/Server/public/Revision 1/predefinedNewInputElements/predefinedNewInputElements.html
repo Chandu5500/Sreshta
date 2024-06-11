@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>predefinedNewInputElements</title>
+        <style>
+            ul li{
+                border: 2px solid;
+                padding: 5px;
+                list-style: none;
+                margin: 5px;
+            }
+            ul{
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>
+                    <input type="number" min="10" max="90">
+                </li>
+                <li>
+                    <input type="date">
+                </li>
+                <li>
+                    <input type="datetime-local">
+                </li>
+                <li>
+                    <input type="time">
+                </li>
+                <li>
+                    <input type="range" min="100" max="1000">
+                </li>
+                <li>
+                    <input type="search">
+                    <input type="email">
+                    <input type="tel"> 
+                </li>
+                <li>
+                    <input type="file" onchange="getFileInfo(event)">
+                </li>
+            </ul>
+        </div>
+        <script>
+            var getFileInfo=(event)=>{
+                console.log(event.target.value)
+            }
+        </script>
+    </body>
+</html>

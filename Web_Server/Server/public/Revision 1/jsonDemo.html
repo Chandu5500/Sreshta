@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsDemo</title>
+</head>
+<body>
+    <div>JS Demo</div>
+    <script type="text/javascript">
+        //1st way individual assignment is not efficient.
+        var sName="Chandu";
+        var sAge=24;
+        var sGender="male";
+        var marks=[88,99,77];
+        var total=marks[0]+marks[1]+marks[2];
+        var avg=total/total.length
+
+        //2nd way array way of assignment is also not efficient.
+        var sdetails=["Chandu", 24, "male", [88,99,77], 0, 0,''];
+        for (i=0;i<sdetails[3].length;i++){
+            sdetails[4]+=sdetails[3][i]
+        }
+        sdetails[5]=sdetails[4]/sdetails[3].length
+        if (sdetails[5]>40){
+            sdetails[6]="Pass";
+        }else{
+            sdetails[6]="You have a surprise";
+        }
+        /*console.log("Name: "+sdetails[0]);
+        console.log("Age: "+sdetails[1]);
+        console.log("Gender: "+sdetails[2]);
+        console.log("Marks: "+sdetails[3]);
+        console.log("Total: "+sdetails[4]);
+        console.log("Avg: "+sdetails[5]);
+        console.log("Status: "+sdetails[6]);*/
+
+        //3rd way JSON is the efficient way.
+        var data={}
+        //(or)
+        var data=new Object();
+        
+        var details={
+            "Name":"Chandu",
+            "Age":24,
+            "Gender":"Male",
+            "Marks":[88,77,99],
+            "Total":0,
+            "Avg":0,
+            "Grade":""
+        }
+        for(var j=0;j<details.Marks.length;j++){
+            details.Total+=details.Marks[j];
+        }
+        details.Avg=details.Total/details.Marks.length;
+        if (details.Avg>40){
+            details.Grade="Pass";
+        }else{
+            details.Grade="You have a surprise";
+        }
+        console.log("Name: "+details.Name);
+        console.log("Age: "+details.Age);
+        console.log("Gender: "+details.Gender);
+        console.log("Marks: "+details.Marks);
+        console.log("Total: "+details.Total);
+        console.log("Avg: "+details.Avg);
+        console.log("Grade: "+details.Grade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>returning_values_from_Function</title>
+</head>
+<body>
+    <div>Passing Data as Parameters</div>
+    <script type="text/javascript">
+        var a, b;
+        var data=()=>{
+            
+            a=prompt("Enter First Value:");
+            a=parseInt(a);
+            b=prompt("Enter Second Value:");
+            b=parseInt(b);
+            var total=result();
+            console.log("Sum is "+total);  
+        }
+        var result=()=>{
+            var sum;
+            sum=a+b;
+            return sum;
+        }
+        data();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment_12</title>
+</head>
+<body>
+    <div>asssignment_12</div>
+    <script type="text/javascript">
+        var n=prompt("Enter the number: ");
+        var count=0;
+        n=parseInt(n);
+        for(var i=1;i<=n;i++){
+            if(n%i==0){
+                count+=1;
+            }
+        }
+        if (count==2){
+            console.log(n+" is a Prime number");
+        }
+        else{
+            console.log(n+ " is not a Prime number");
+        }
+    </script>
+</body>
+</html>

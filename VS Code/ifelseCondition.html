@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>if else condition</title>
+    </head>
+    <body>
+        <div>if else condition</div>
+        <script>
+            var name=prompt("Enter Name: ");
+            var age=prompt("Enter Age: ");
+            var gender=prompt("Enter Gender: ");
+            var m1=prompt("Enter M1: ");
+            m1=parseInt(m1);
+            var m2=prompt("Enter M2: ");
+            m2=parseInt(m2);
+            var m3=prompt("Enter M3: ");
+            m3=parseInt(m3);
+            var Total=m1+m2+m3;
+            var avg=Total/3;
+            console.log("Student name: "+ name);
+            console.log("Student age: "+ age);
+            console.log("Student gender: "+gender);
+            console.log("Student m1 marks: "+ m1);
+            console.log("Student m2 marks: "+ m2);
+            console.log("Student m3 marks: "+ m3);
+            console.log("Student Total: "+ Total);
+            console.log("Student Avg: "+ avg);
+            if (avg>=40){
+                console.log("Student Passed ")
+            }
+            else {
+                console.log("Student Failed")
+            };
+        </script>
+    </body>
+</html>

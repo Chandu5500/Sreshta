@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function bodyLoad(){
+                window.document.images[0].src="";
+                window.document.forms[0].elements[1].value= "Register"
+                window.document.forms[1].elements[1].value= "Login"
+            }
+        </script>
+    </head>
+    <body onload="bodyLoad()">
+        <img width="100" height="100" border="1">
+        <div>
+            <form>
+                <h3>Register</h3>
+                User name: <input type="text"><input type="button">
+            </form>
+        </div>
+        <div>
+            <form>
+                <h3>Login</h3>
+                Email: <input type="text"><input type="button">
+            </form>
+        </div>
+    </body>
+</html>

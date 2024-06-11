@@ -1,0 +1,25 @@
+<script>
+    var data={
+        "Name": "TV",
+        "MFD": new Date(),
+        "MFG_manual": new Date("2022-10-31 7:11:20.60")
+    }
+
+    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var Months = ["Jan", "Feb", "March", "April", "May", "June", "July", "August", "September", "October","November", "December"]
+
+    document.write(data.MFD + "<br>");
+    document.write(data.MFG_manual + "<br>");
+    document.write(`--------------<br>`);
+    document.write(`
+        Name: ${data.Name}<br>
+        MFD: ${data.MFD}<br>
+        MFD: ${data.MFD.toLocaleDateString()}<br>
+        FullYear: ${data.MFD.getFullYear()}<br>
+        Month: ${data.MFD.getMonth()}<br>
+        Date: ${data.MFD.getDate()}<br>
+        Day: ${data.MFD.getDay()}->It will gives only number<br>
+        Day: ${weekDays[data.MFD.getDay()]}<br>
+        Month: ${Months[data.MFD.getMonth()]}
+    `)
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment_16</title>
+</head>
+<body>
+    <div>assignment_16</div>
+    <script type="text/javascript">
+        var studentDetails=()=>{
+            var sName,sGender,sAge,m1,m2,m3;
+            sName=prompt("Enter Student name: ")
+            sGender=prompt("Enter Gender: ");
+            sAge=prompt("Enter age: ");
+            m1=prompt("Enter m1 marks");
+            m1=parseInt(m1);
+            m2=prompt("Enter m2 marks:");
+            m2=parseInt(m2);
+            m3=prompt("Enter m3 marks: ");
+            m3=parseInt(m3);
+            var response=avg_sum(m1,m2,m3);
+            var total=response[0];
+            var avg=response[1];
+            console.log("Total marks:"+total);
+            console.log("Avg marks:"+avg);
+        }
+        var avg_sum=(a1,a2,a3)=>{
+            var s,avg;
+            s=a1+a2+a3;
+            avg=s/3;
+            return [s,avg];
+        }
+        studentDetails();
+    </script>
+</body>
+</html>

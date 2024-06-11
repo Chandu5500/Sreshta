@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>extendedParameters</title>
+    </head>
+    <body>
+        <script>
+            var addvalues=(a,b, ...param)=>{
+                var result=a+b;
+                console.log("The sum is: "+result);
+                console.log(param);
+            }
+
+            addvalues(10,20,30,50,6,0,60);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.heading{
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+    padding: 20px;
+}
+.maincontainer{
+    border: 2px solid;
+    margin: 20px auto;
+    width: 700px;
+    padding: 20px;
+}
+.container{
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    color: green;
+}
+.thanksBlock{
+    text-align: center;
+    width: 700px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 50px;
+    border: 2px solid;
+    color: blue;
+    display: none;
+}

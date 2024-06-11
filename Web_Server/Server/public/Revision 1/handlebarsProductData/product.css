@@ -1,0 +1,61 @@
+h3{
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.actualPrice{
+    text-decoration: underline;
+    text-decoration-line: line-through;
+    color: blue;
+}
+.discountPrice{
+    color: red;
+}
+.footer{
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+ul{
+    border: 2px solid;
+    margin: 5px;
+    padding: 0px;
+    width: 350px;
+    display: inline-block;
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+}
+.mainContainer{
+    border: 2px solid;
+    margin: 5px;
+    height: 584px;
+    overflow: auto;
+}
+.errorBlock{
+    border: 2px solid red;
+    width: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    color: red;
+    display: none;
+}
+.loadingBlock{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    display: none;
+}

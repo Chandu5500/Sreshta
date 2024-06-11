@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>inheritanceBtwStaticObj</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var seller={
+                seller:"Assam",
+                rating:"4.5/5",
+                contactNo:"6287521145"
+            };
+            var pData1={
+                name:"Laptop",
+                price:60000,
+                manufacturor:"Asus Corp",
+                description:"ready to use tuffly",
+                img:"laptop.img",
+                display1(){
+                    console.log("Name: "+this.name);
+                    console.log("Price: "+this.price);
+                    console.log("Manufacturor: "+this.manufacturor);
+                    console.log("Description: "+this.description);
+                    console.log("Image: "+this.img);
+                    console.log("Seller: "+this.seller);
+                    console.log("Rating: "+this.rating);
+                    console.log("Contact number: "+this.contactNo);
+                }
+            }
+            pData1.__proto__=seller;
+
+            var pData2={
+                name:"Mobile",
+                price:20000,
+                manufacturor:"Realme Corp",
+                description:"ready to use",
+                img:"mobile.img",
+                seller:"Assam",
+                rating:"4.5/5",
+                contactNo:"6287521145",
+                display2(){
+                    console.log("Name: "+this.name);
+                    console.log("Price: "+this.price);
+                    console.log("Manufacturor: "+this.manufacturor);
+                    console.log("Description: "+this.description);
+                    console.log("Image: "+this.img);
+                    console.log("Seller: "+this.seller);
+                    console.log("Rating: "+this.rating);
+                    console.log("Contact number: "+this.contactNo);
+                }
+            }
+            pData2.__proto__=seller;
+
+            pData1.display1();
+            pData2.display2();
+        </script>
+    </body>
+</html>
